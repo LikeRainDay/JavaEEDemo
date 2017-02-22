@@ -1,6 +1,8 @@
+package ValueInjection;
+
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import service.Persion;
+import ValueInjection.service.Persion;
 
 /**
  * Created by housh on 2017/2/22.

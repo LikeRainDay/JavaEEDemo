@@ -5,11 +5,17 @@
 
 
 
-    <bean id="chinese" class="impl.Chinese">
+    <bean id="chinese" class="ValueInjection.impl.Chinese">
         <property name="axe" ref="steeAxe"/>
     </bean>
 
-    <bean id="stoneAxe" class="impl.StoneAxe"/>
+    <bean id="chineseStruct" class="StructInjection.impl.Chinese">
+        <constructor-arg ref="steeAxe"/>
 
-    <bean id="steeAxe" class="impl.SteeAxe"/>
+
+    </bean>
+
+    <bean id="stoneAxe" class="ValueInjection.impl.StoneAxe"/>
+
+    <bean id="steeAxe" class="ValueInjection.impl.SteeAxe"/>
 </beans>

@@ -1,6 +1,6 @@
-package impl;
+package ValueInjection.impl;
 
-import service.Axe;
+import ValueInjection.service.Axe;
 
 /**
  * Created by housh on 2017/2/22.

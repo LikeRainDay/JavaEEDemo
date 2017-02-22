@@ -1,7 +1,7 @@
-package impl;
+package ValueInjection.impl;
 
-import service.Axe;
-import service.Persion;
+import ValueInjection.service.Axe;
+import ValueInjection.service.Persion;
 
 /**
  * Created by housh on 2017/2/22.
