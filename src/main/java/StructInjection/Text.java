@@ -13,6 +13,9 @@ public class Text {
         ApplicationContext cpa = new ClassPathXmlApplicationContext("beans.xml");
         Persion chinese = cpa.getBean("chineseStruct", Persion.class);
         chinese.useAxe();
+/*国际化调用*/
+//        International.Persion persion = cpa.getBean("persion", International.Persion.class);
+//        persion.sayHi("你好");
 
 
     }

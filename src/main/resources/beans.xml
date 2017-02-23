@@ -18,4 +18,18 @@
     <bean id="stoneAxe" class="ValueInjection.impl.StoneAxe"/>
 
     <bean id="steeAxe" class="ValueInjection.impl.SteeAxe"/>
+
+    <bean id="persion" class="International.Persion"/>
+
+    <!--配置一个prototype  Bean实例  每次通过容器都会产生一个新的Bean实例-->
+    <!--<bean id="persionS" class="International.Persion" scope="prototype"/>-->
+    <!--配饰一个request  Bean实例  对于依次Http请求，request的作用域的Bean实例 只讲生成一个-->
+    <!--<bean id="persionS" class="International.Persion" scope="request"/>-->
+    <!--配饰一个request  Bean实例  对于依次session请求  在一次Http回话伤  每次请求bean都将创建一个-->
+    <!--<bean id="persionS" class="International.Persion" scope="session"/>-->
+    <!--配饰一个request  Bean实例  对于依次globalSession请求 只有web应用中使用，作用域才有效-->
+    <!--<bean id="persionS" class="International.Persion" scope="globalSession"/>-->
+
+    <bean id="p" class="International.Persion" scope="request"/>
+
 </beans>
