@@ -4,7 +4,6 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-
     <bean id="chinese" class="ValueInjection.impl.Chinese">
         <property name="axe" ref="steeAxe"/>
     </bean>
@@ -31,5 +30,19 @@
     <!--<bean id="persionS" class="International.Persion" scope="globalSession"/>-->
 
     <bean id="p" class="International.Persion" scope="request"/>
+
+
+    <!--静态注入-->
+    <bean id="dog" class="StaticInjection.BeingFactory" factory-method="getBeing">
+        <constructor-arg value="dog"/>
+        <property name="msg" value="我是狗"/>
+    </bean>
+
+    <bean id="cat" class="StaticInjection.BeingFactory" factory-method="getBeing">
+
+        <constructor-arg value="cat"/>
+        <property name="msg" value="我是猫"/>
+
+    </bean>
 
 </beans>
